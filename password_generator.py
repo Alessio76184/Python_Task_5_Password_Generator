@@ -17,7 +17,7 @@ def generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase
         password = ''
         # Generate password
         for _ in range(length):
-            #secrets is import that technically safer for generating random results
+            #secrets is import that is technically safer for generating random results
             password += secrets.choice(all_characters)
         
         constraints = [
@@ -38,7 +38,7 @@ def generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase
             for constraint, pattern in constraints
         ):
             break
-    
+    break
     return password
     
 if __name__ == '__main__':
